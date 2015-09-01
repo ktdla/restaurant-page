@@ -1,0 +1,39 @@
+header {
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+header div {
+  padding-top: 10px;
+  position: absolute;
+  right: 50px;
+  top: 0;
+  span {
+    display: block;
+    font-size: 18px;
+    text-align: right;
+  }
+  li {
+    border: 10px solid $dark-yellow;
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    list-style-type: none;
+    margin-left: .2em;
+    margin-top: .5em;
+    &:hover, &.active { background-color: $dark-yellow; }
+  }
+  a {
+    color: $orange;
+    display: block;
+    font-weight: bolder;
+    padding: .25em 1.25em;
+    text-decoration: none;
+  }
+  ul { margin: 0; }
+}
+
+.logo {
+  float: left;
+  width: 215px;
+}

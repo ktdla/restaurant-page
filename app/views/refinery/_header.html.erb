@@ -1,0 +1,14 @@
+<header>
+  <%= link_to refinery.root_path do %>
+    <%= image_tag "dona_elsita.png", :class => "logo" %>
+  <% end %>
+  <div>
+    <span>Horario de atención: Lunes a Domingo de 7am-11pm</span>
+    <span>Dirección: Las Calezas N˚ 171, Rímac, Lima - Perú</span>
+    <nav>
+      <ul>
+        <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+      </ul>
+    </nav>
+  </div>
+</header>
