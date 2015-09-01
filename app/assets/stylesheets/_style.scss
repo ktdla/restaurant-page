@@ -111,7 +111,7 @@ h3 {
   }
 }
 
-.history {
+.our-history {
   @include span-columns(8);
   display: inline-block;
   img { width: 95%; }
@@ -120,7 +120,7 @@ h3 {
   text-align: center;
 }
 
-.container .history, .container .galery { margin-top: 50px; }
+.container .our-history, .container .galery { margin-top: 50px; }
 
 .galery {
   @include span-columns(4);
