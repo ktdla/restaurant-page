@@ -1,14 +1,4 @@
 GIT
-  remote: https://github.com/bisscomm/refinerycms-image-slideshows
-  revision: a92b47ae9be651a37bd8598b610bfdf1bb75610c
-  branch: master
-  specs:
-    refinerycms-image_slideshows (3.0.0)
-      globalize (~> 5.0)
-      refinerycms-core (~> 3.0.0)
-      refinerycms-images (~> 3.0.0)
-
-GIT
   remote: https://github.com/refinery/refinerycms
   revision: f9c15e8a4478b73a4115095cec545912ad6dd8f6
   branch: master
@@ -277,7 +267,6 @@ DEPENDENCIES
   refinerycms!
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.0)
   refinerycms-authentication-devise (~> 1.0)
-  refinerycms-image_slideshows!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

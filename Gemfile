@@ -68,5 +68,3 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
-
-gem 'refinerycms-image_slideshows', git: 'https://github.com/bisscomm/refinerycms-image-slideshows', branch: 'master'
