@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Café Restaurante Doña Elsita</title>
+  <link href='//fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <%= stylesheet_link_tag "application", :media => "all", 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= render 'layouts/navigation' %>
+  <%= yield %>
+  <%= render 'layouts/footer' %>
+</body>
+<%= javascript_include_tag "public/public" %>
+</html>
