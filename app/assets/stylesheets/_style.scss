@@ -140,11 +140,14 @@ h3 {
   padding-left: 0;
   text-align: center;
   li {
+    @extend a;
     border-radius: 5px;
     border: 10px solid $dark-yellow;
     margin-top: .5em;
     padding: 5px;
+    position: relative;
     &.active { background: $dark-yellow; }
+    &:hover { cursor: pointer; }
   }
   ul { padding-left: 0; }
 }
@@ -242,13 +245,12 @@ li.slide-current { display: block; }
   }
 }
 
-.category li { position: relative; }
 .arrow {
-  position:absolute;
-  top: -10px;
-  border-top: 26px solid transparent;
-  border-left: 26px solid $dark-yellow;
   border-bottom: 26px solid transparent;
+  border-left: 26px solid $dark-yellow;
+  border-top: 26px solid transparent;
   content: " ";
-  left: 100%;
+  left: 102%;
+  position: absolute;
+  top: -10px;
 }
