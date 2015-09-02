@@ -238,6 +238,7 @@ li.slide-current { display: block; }
     height: 12px;
     margin: 0 4px;
     width: 12px;
+    &.active { background-color: $orange; }
   }
 }
 
