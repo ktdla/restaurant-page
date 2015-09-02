@@ -1,6 +1,11 @@
-<section class="main">
+<section class="main slider-container">
   <div class="container">
-    <%= image_tag 'main.png' %>
+    <ul id="slider" class="slider-wrapper">
+      <li class="slide-current"><%= image_tag 'main.png' %></li>
+      <li><%= image_tag 'historia.jpg' %></li>
+      <li><%= image_tag 'main.png' %></li>
+    </ul>
+    <ul id="slider-controls" class="slider-controls"></ul>
   </div>
 </section>
 <div class="container">

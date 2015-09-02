@@ -199,3 +199,40 @@ article.border-yellow {
     right: 50px;
   }
 }
+
+.slider-container { margin: 0 auto; }
+
+.slider-wrapper {
+  position: relative;
+  z-index: 90;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper li {
+  display: none;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+li.slide-current { display: block; }
+
+.slider-controls {
+  text-align: center;
+  margin-top: 15px;
+  li {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: $brown;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 12px;
+    margin: 0 4px;
+    width: 12px;
+    &.active { background: $orange; }
+  }
+}
