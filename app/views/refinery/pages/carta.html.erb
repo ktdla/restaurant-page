@@ -7,17 +7,43 @@
   <div class="category">
     <h3>Categorías</h3>
     <ul>
-      <li><a href="">Jugos</a></li>
-      <li><a href="">Bebidas</a></li>
-      <li><a href="">Sanguches</a></li>
-      <li><a href="">Triples</a></li>
-      <li><a href="">Salchipapas</a></li>
-      <li><a href="">Antojitos</a></li>
-      <li><a href="">Enrrollados</a></li>
-      <li><a href="">Pizzas</a></li>
-      <li><a href="">Postres y Helados</a></li>
+      <li data-name="jugos"><a href="#" >Jugos</a><div></div></li>
+      <li data-name="bebidas"><a href="#">Bebidas</a><div></div></li>
+      <li data-name="sanguches"><a href="#">Sanguches</a><div></div></li>
+      <li data-name="triples"><a href="#">Triples</a><div></div></li>
+      <li data-name="salchipapas"><a href="#">Salchipapas</a><div></div></li>
+      <li data-name="antojitos"><a href="#">Antojitos</a><div></div></li>
+      <li data-name="enrrollados"><a href="#">Enrrollados</a><div></div></li>
+      <li data-name="pizzas"><a href="#">Pizzas</a><div></div></li>
+      <li data-name="postres"><a href="#">Postres y Helados</a><div></div></li>
     </ul>
   </div>
+  <section id="jugos" class="border-yellow menu show">
+    <%= image_tag 'header_carta.jpg' %>
+    <article>
+      <h3>Jugo de fresa</h3>
+      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <span class="price">S/. 5.00</span>
+    </article>
+    <article>
+      <h3>Jugo de naranja</h3>
+      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <span class="price">S/. 6.00</span>
+    </article>
+  </section>
+  <section id="bebidas" class="border-yellow menu">
+    <%= image_tag 'header_carta.jpg' %>
+    <article>
+      <h3>Gaseosas</h3>
+      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <span class="price">S/. 2.00</span>
+    </article>
+    <article>
+      <h3>Chicha</h3>
+      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <span class="price">S/. 3.00</span>
+    </article>
+  </section>
   <section id="sanguches" class="border-yellow menu">
     <%= image_tag 'header_carta.jpg' %>
     <article>
@@ -39,6 +65,97 @@
       <h3>Super light</h3>
       <span>Pan árabe, aceitunas botija y verdes, queso fresco, tomate, lechuga y aceite de oliva.</span>
       <span class="price">S/. 6.00</span>
+    </article>
+  </section>
+  <section id="triples" class="border-yellow menu">
+    <%= image_tag 'header_carta.jpg' %>
+    <article>
+      <h3>Super Triple</h3>
+      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <span class="price">S/. 6.00</span>
+    </article>
+    <article>
+      <h3>Triple supremo</h3>
+      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <span class="price">S/. 9.00</span>
+    </article>
+  </section>
+  <section id="salchipapas" class="border-yellow menu">
+    <%= image_tag 'header_carta.jpg' %>
+    <article>
+      <h3>Salchipapas</h3>
+      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <span class="price">S/. 10.00</span>
+    </article>
+    <article>
+      <h3>Salchi</h3>
+      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <span class="price">S/. 8.00</span>
+    </article>
+  </section>
+  <section id="salchipapas" class="border-yellow menu">
+    <%= image_tag 'header_carta.jpg' %>
+    <article>
+      <h3>Salchipapas</h3>
+      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <span class="price">S/. 10.00</span>
+    </article>
+    <article>
+      <h3>Salchi</h3>
+      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <span class="price">S/. 8.00</span>
+    </article>
+  </section>
+  <section id="antojitos" class="border-yellow menu">
+    <%= image_tag 'header_carta.jpg' %>
+    <article>
+      <h3>Anticuchos</h3>
+      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <span class="price">S/. 10.00</span>
+    </article>
+    <article>
+      <h3>Causa</h3>
+      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <span class="price">S/. 8.00</span>
+    </article>
+  </section>
+   <section id="enrrollados" class="border-yellow menu">
+    <%= image_tag 'header_carta.jpg' %>
+    <article>
+      <h3>Enrrollado de pollo</h3>
+      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <span class="price">S/. 12.00</span>
+    </article>
+    <article>
+      <h3>Enrrollado de carne</h3>
+      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <span class="price">S/. 15.00</span>
+    </article>
+  </section>
+  <section id="pizzas" class="border-yellow menu">
+    <%= image_tag 'header_carta.jpg' %>
+    <article>
+      <h3>Pizza Americana</h3>
+      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <span class="price">S/. 30.00</span>
+    </article>
+    <article>
+      <h3>Pizza Hawaiana</h3>
+      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <span class="price">S/. 25.00</span>
+    </article>
+  </section>
+   <section id="postres" class="border-yellow menu">
+    <%= image_tag 'header_carta.jpg' %>
+    <article>
+      <h3>Torta helada</h3>
+      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <span class="price">S/. 5.00</span>
+    </article>
+    <article>
+      <h3>Helado de chocolate</h3>
+      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <span class="price">S/. 3.00</span>
     </article>
   </section>
 </div>
