@@ -84,16 +84,42 @@ h3 {
 
 .speciality {
   margin-top: 50px;
-  button {
-    height: 40px;
-    margin-top: 15px;
-    width: 300px;
+  article { position: relative; }
+  .overlay {
+    height: 200px;
+    position: absolute;
+    width: 100%;
+  }
+  a {
+    display: block;
+    &:hover .description {
+      color: white;
+      background-color: $orange;
+    }
+    &:hover .overlay {
+      background-color: $orange;
+      border-radius: 5px 5px 0 0;
+      height: 200px;
+      opacity: 0.2;
+      width:100%;
+    }
+  }
+
+  div.description {
+    background-color: $light-yellow;
+    border-radius: 0 0 5px 5px;
+    color: $orange;
+    cursor: pointer;
+    line-height: 40px;
+    margin: 0 auto;
+    vertical-align: top;
+    width: 100%;
   }
   img {
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     display: block;
     height: 200px;
-    width: 302px;
+    width: 100%;
   }
 }
 
