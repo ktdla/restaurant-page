@@ -5,8 +5,8 @@
 </section>
 <div class="container">
   <div class="category">
-    <h3>Categorías</h3>
     <ul>
+      <li class="active" data-name="recomendados">Recomendados</li>
       <li data-name="jugos">Jugos<div></div></li>
       <li data-name="bebidas">Bebidas<div></div></li>
       <li data-name="sanguches">Sanguches<div></div></li>
@@ -18,143 +18,217 @@
       <li data-name="postres">Postres y helados<div></div></li>
     </ul>
   </div>
-  <section id="jugos" class="border-yellow menu show">
-    <%= image_tag 'header_carta.jpg' %>
+  <section id="recomendados" class="border-yellow menu show">
     <article>
-      <h3>Jugo de fresa</h3>
-      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <%= image_tag "plato1.jpg" %>
+      <div class="menu-description">
+        <h3>Chicha morada</h3>
+        <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      </div>
+      <span class="price">S/. 2.00</span>
+    </article>
+    <article>
+      <%= image_tag "plato2.jpg" %>
+      <div class="menu-description">
+        <h3>Mazamorra de piña</h3>
+        <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      </div>
+      <span class="price">S/. 3.00</span>
+    </article>
+  </section>
+  <section id="jugos" class="border-yellow menu">
+    <article>
+      <%= image_tag "plato3.jpg" %>
+      <div class="menu-description">
+        <h3>Jugo de fresa</h3>
+        <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      </div>
       <span class="price">S/. 5.00</span>
     </article>
     <article>
-      <h3>Jugo de naranja</h3>
-      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <%= image_tag "plato1.jpg" %>
+      <div class="menu-description">
+        <h3>Jugo de naranja</h3>
+        <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      </div>
       <span class="price">S/. 6.00</span>
     </article>
   </section>
   <section id="bebidas" class="border-yellow menu">
-    <%= image_tag 'header_carta.jpg' %>
     <article>
-      <h3>Gaseosas</h3>
-      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <%= image_tag "plato3.jpg" %>
+      <div class="menu-description">
+        <h3>Gaseosas</h3>
+        <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      </div>
       <span class="price">S/. 2.00</span>
     </article>
     <article>
-      <h3>Chicha</h3>
-      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <%= image_tag "plato2.jpg" %>
+      <div class="menu-description">
+        <h3>Chicha</h3>
+        <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      </div>
       <span class="price">S/. 3.00</span>
     </article>
   </section>
   <section id="sanguches" class="border-yellow menu">
-    <%= image_tag 'header_carta.jpg' %>
     <article>
-      <h3>Pescador</h3>
-      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <%= image_tag "plato2.jpg" %>
+      <div class="menu-description">
+        <h3>Pescador</h3>
+        <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      </div>
       <span class="price">S/. 5.00</span>
     </article>
     <article>
-      <h3>Pollo mediterráneo</h3>
-      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <%= image_tag "plato1.jpg" %>
+      <div class="menu-description">
+        <h3>Pollo mediterráneo</h3>
+        <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      </div>
       <span class="price">S/. 6.00</span>
     </article>
     <article>
-      <h3>Pollo frutado</h3>
-      <span>Pollo deshilachado, durazno, piña, espárrago, mayonesa, lechuga y tomate.</span>
+      <%= image_tag "plato3.jpg" %>
+      <div class="menu-description">
+        <h3>Pollo frutado</h3>
+        <span>Pollo deshilachado, durazno, piña, espárrago, mayonesa, lechuga y tomate.</span>
+      </div>
       <span class="price">S/. 6.00</span>
     </article>
     <article>
-      <h3>Super light</h3>
-      <span>Pan árabe, aceitunas botija y verdes, queso fresco, tomate, lechuga y aceite de oliva.</span>
+      <%= image_tag "plato2.jpg" %>
+      <div class="menu-description">
+        <h3>Super light</h3>
+        <span>Pan árabe, aceitunas botija y verdes, queso fresco, tomate, lechuga y aceite de oliva.</span>
+      </div>
       <span class="price">S/. 6.00</span>
     </article>
   </section>
   <section id="triples" class="border-yellow menu">
-    <%= image_tag 'header_carta.jpg' %>
     <article>
-      <h3>Super Triple</h3>
-      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <%= image_tag "plato1.jpg" %>
+      <div class="menu-description">
+        <h3>Super Triple</h3>
+        <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      </div>
       <span class="price">S/. 6.00</span>
     </article>
     <article>
-      <h3>Triple supremo</h3>
-      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <%= image_tag "plato2.jpg" %>
+      <div class="menu-description">
+        <h3>Triple supremo</h3>
+        <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      </div>
       <span class="price">S/. 9.00</span>
     </article>
   </section>
   <section id="salchipapas" class="border-yellow menu">
-    <%= image_tag 'header_carta.jpg' %>
     <article>
-      <h3>Salchipapas</h3>
-      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <%= image_tag "plato1.jpg" %>
+      <div class="menu-description">
+        <h3>Salchipapas</h3>
+        <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      </div>
       <span class="price">S/. 10.00</span>
     </article>
     <article>
-      <h3>Salchi</h3>
-      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <%= image_tag "plato2.jpg" %>
+      <div class="menu-description">
+        <h3>Salchi</h3>
+        <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      </div>
       <span class="price">S/. 8.00</span>
     </article>
   </section>
   <section id="salchipapas" class="border-yellow menu">
-    <%= image_tag 'header_carta.jpg' %>
     <article>
-      <h3>Salchipapas</h3>
-      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <%= image_tag "plato3.jpg" %>
+      <div class="menu-description">
+        <h3>Salchipapas</h3>
+        <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      </div>
       <span class="price">S/. 10.00</span>
     </article>
     <article>
-      <h3>Salchi</h3>
-      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <%= image_tag "plato1.jpg" %>
+      <div class="menu-description">
+        <h3>Salchi</h3>
+        <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      </div>
       <span class="price">S/. 8.00</span>
     </article>
   </section>
   <section id="antojitos" class="border-yellow menu">
-    <%= image_tag 'header_carta.jpg' %>
     <article>
-      <h3>Anticuchos</h3>
-      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <%= image_tag "plato2.jpg" %>
+      <div class="menu-description">
+        <h3>Anticuchos</h3>
+        <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      </div>
       <span class="price">S/. 10.00</span>
     </article>
     <article>
-      <h3>Causa</h3>
-      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <%= image_tag "plato3.jpg" %>
+      <div class="menu-description">
+        <h3>Causa</h3>
+        <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      </div>
       <span class="price">S/. 8.00</span>
     </article>
   </section>
    <section id="enrrollados" class="border-yellow menu">
-    <%= image_tag 'header_carta.jpg' %>
     <article>
-      <h3>Enrrollado de pollo</h3>
-      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <%= image_tag "plato2.jpg" %>
+      <div class="menu-description">
+        <h3>Enrrollado de pollo</h3>
+        <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      </div>
       <span class="price">S/. 12.00</span>
     </article>
     <article>
-      <h3>Enrrollado de carne</h3>
-      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <%= image_tag "plato1.jpg" %>
+      <div class="menu-description">
+        <h3>Enrrollado de carne</h3>
+        <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      </div>
       <span class="price">S/. 15.00</span>
     </article>
   </section>
   <section id="pizzas" class="border-yellow menu">
-    <%= image_tag 'header_carta.jpg' %>
     <article>
-      <h3>Pizza Americana</h3>
-      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <%= image_tag "plato1.jpg" %>
+      <div class="menu-description">
+        <h3>Pizza Americana</h3>
+        <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      </div>
       <span class="price">S/. 30.00</span>
     </article>
     <article>
-      <h3>Pizza Hawaiana</h3>
-      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <%= image_tag "plato3.jpg" %>
+      <div class="menu-description">
+        <h3>Pizza Hawaiana</h3>
+        <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      </div>
       <span class="price">S/. 25.00</span>
     </article>
   </section>
    <section id="postres" class="border-yellow menu">
-    <%= image_tag 'header_carta.jpg' %>
     <article>
-      <h3>Torta helada</h3>
-      <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      <%= image_tag "plato2.jpg" %>
+      <div class="menu-description">
+        <h3>Torta helada</h3>
+        <span>Atún, mayonesa, huevo, tomate, lechuga y papas fritas.</span>
+      </div>
       <span class="price">S/. 5.00</span>
     </article>
     <article>
-      <h3>Helado de chocolate</h3>
-      <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      <%= image_tag "plato3.jpg" %>
+      <div class="menu-description">
+        <h3>Helado de chocolate</h3>
+        <span>Pan árabe, pollo deshilachado, mayonesa, aceitunas, pecanas, pasas, tomate y lechuga.</span>
+      </div>
       <span class="price">S/. 3.00</span>
     </article>
   </section>
