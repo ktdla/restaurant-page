@@ -15,13 +15,17 @@ header div {
     text-align: right;
   }
   li {
-    border: 10px solid $dark-yellow;
     border-radius: 5px 5px 0 0;
     display: inline-block;
     list-style-type: none;
-    margin-left: .2em;
-    margin-top: .5em;
-    &:hover, &.active { background-color: $dark-yellow; }
+    margin: .5em .5em 0;
+    background-color: $light-yellow;
+    &:hover, &.active {
+      background-color: $dark-yellow;
+      margin: 0 1em;
+      transform: scale(1.17);
+      color: $orange;
+    }
   }
   a {
     color: $orange;
@@ -35,5 +39,5 @@ header div {
 
 .logo {
   float: left;
-  width: 215px;
+  width: 200px;
 }
