@@ -1,11 +1,161 @@
-<% content_for :body do %>
-  <ul id="events">
-    <% @events.each do |event| %>
-      <li>
-        <%= link_to event.title, refinery.events_event_path(event) %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
+<%= render '/refinery/content_page', :hide_sections => [:body_content_title] %>
 
-<%= render '/refinery/content_page' %>
+<section class="main">
+  <div class="container">
+    <h2>En Doña Elsita encontrarás los mejores platos...</h2>
+  </div>
+</section>
+<div class="container">
+  <div class="category">
+    <ul>
+      <li class="active" data-name="recomendados">Recomendados</li>
+      <li data-name="jugos">Jugos<div></div></li>
+      <li data-name="bebidas">Bebidas<div></div></li>
+      <li data-name="sanguches">Sanguches<div></div></li>
+      <li data-name="triples">Triples<div></div></li>
+      <li data-name="salchipapas">Salchipapas<div></div></li>
+      <li data-name="antojitos">Antojitos<div></div></li>
+      <li data-name="enrrollados">Enrrollados<div></div></li>
+      <li data-name="pizzas">Pizzas<div></div></li>
+      <li data-name="postres">Postres y helados<div></div></li>
+    </ul>
+  </div>
+  <section id="recomendados" class="border-yellow menu show">
+  <% @events.each do |event| %>
+    <article>
+      <%= image_fu event.photo, nil %>
+      <div class="menu-description">
+        <h3><%=raw event.title %></h3>
+        <span><%=raw event.description %></span>
+      </div>
+      <span class="price"><%=raw event.price %></span>
+    </article>
+  <% end %>
+  </section>
+  <section id="jugos" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 1 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price"><%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="bebidas" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 2 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price"><%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="sanguches" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 3 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price"><%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="triples" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 4 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price"><%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="salchipapas" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 5 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price"><%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="antojitos" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 6 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price"><%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+   <section id="enrrollados" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 7 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price"><%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="pizzas" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 8 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price"><%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="postres" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 9 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price"><%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+</div>
