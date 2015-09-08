@@ -86,20 +86,19 @@ h3 {
   margin-top: 50px;
   article { position: relative; }
   .overlay {
-    height: 200px;
+    height: 250px;
     position: absolute;
     width: 100%;
   }
   a {
     display: block;
     &:hover .description {
-      color: white;
-      background-color: $orange;
+      background-color: $dark-yellow;
     }
     &:hover .overlay {
-      background-color: $orange;
+      background-color: $dark-yellow;
       border-radius: 5px 5px 0 0;
-      height: 200px;
+      height: 250px;
       opacity: 0.2;
       width:100%;
     }
@@ -118,7 +117,7 @@ h3 {
   img {
     border-radius: 5px 5px 0 0;
     display: block;
-    height: 200px;
+    height: 250px;
     width: 100%;
   }
 }
@@ -167,8 +166,11 @@ h3 {
     @extend a;
     margin-bottom: 0;
     padding: 15px;
-    &.active, &:hover { background: $dark-yellow; }
-    &:hover { cursor: pointer; }
+    &.active, &.active:hover { background: $dark-yellow; }
+    &:hover {
+      background: $hover-color;
+      cursor: pointer;
+    }
   }
   ul {
     margin: 0;

@@ -5,14 +5,15 @@ header {
 }
 
 header div {
-  padding-top: 10px;
+  padding-top: 5px;
   position: absolute;
   right: 50px;
   top: 0;
   span {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     text-align: right;
+    &:nth-child(2) { margin-bottom: 7px; }
   }
   li {
     border-radius: 5px 5px 0 0;
@@ -20,11 +21,14 @@ header div {
     list-style-type: none;
     margin: .5em .5em 0;
     background-color: $light-yellow;
-    &:hover, &.active {
+    &.active, &.active:hover {
       background-color: $dark-yellow;
       margin: 0 1em;
       transform: scale(1.17);
       color: $orange;
+    }
+    &:hover {
+      background-color: $hover-color;
     }
   }
   a {
