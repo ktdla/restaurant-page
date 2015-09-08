@@ -20,6 +20,7 @@
   </div>
   <section id="recomendados" class="border-yellow menu show">
   <% @events.each do |event| %>
+    <% if event.recommended == true %>
     <article>
       <%= image_fu event.photo, nil %>
       <div class="menu-description">
@@ -28,6 +29,7 @@
       </div>
       <span class="price">S/. <%=raw event.price %></span>
     </article>
+    <% end %>
   <% end %>
   </section>
   <section id="jugos" class="border-yellow menu">
