@@ -25,10 +25,14 @@ body {
 }
 
 .container, .horizontal-section, header {
+  @extend .container-services;
+  overflow: hidden;
+}
+
+.container-services {
   margin: 0 auto;
   padding: 0 50px;
   max-width: 1366px;
-  overflow: hidden;
 }
 
 .border-yellow {
@@ -64,7 +68,7 @@ h3 {
 }
 
 .main {
-  background-color: $dark-yellow;
+  background-image: url('background.jpg');
   div { text-align: center; }
   padding: 50px 0;
   margin-top: 0;
@@ -87,6 +91,7 @@ h3 {
   article { position: relative; }
   .overlay {
     height: 250px;
+    object-fit: cover;
     position: absolute;
     width: 100%;
   }
@@ -150,8 +155,10 @@ h3 {
   overflow-y: auto;
   text-align: center;
   img {
+    height: 150px;
+    margin-bottom: 1px;
+    object-fit: cover;
     width: 100%;
-    margin-bottom: 25 px;
   }
 }
 
@@ -159,14 +166,21 @@ h3 {
   width: 25%;
   margin-top: 50px;
   margin-right: 0;
+  padding-left: 10px;
   float: left;
   overflow: hidden;
   text-align: center;
   li {
     @extend a;
-    margin-bottom: 0;
+    background-color: $light-yellow;
+    border-radius: 5px 0 0 5px;
+    margin-bottom: 1px;
     padding: 15px;
-    &.active, &.active:hover { background: $dark-yellow; }
+    &.active, &.active:hover {
+      background: $dark-yellow;
+      border-radius: 5px 0 0 5px;
+      margin-left: -.5em;
+    }
     &:hover {
       background: $hover-color;
       cursor: pointer;
@@ -175,9 +189,6 @@ h3 {
   ul {
     margin: 0;
     padding-left: 0;
-    border: 10px solid $dark-yellow;
-    border-radius: 5px 0 0 5px;
-    border-right-width: 0;
   }
 }
 
@@ -216,10 +227,11 @@ h3 {
       bottom: 50px
     }
     img {
-      height: 150px;
-      width: 150px;
-      display: inline-block;
       border-radius: 5px;
+      display: inline-block;
+      height: 150px;
+      object-fit: cover;
+      width: 150px;
     }
   }
 }
@@ -238,7 +250,7 @@ h3 {
 
 .show { display: block; }
 
-article.border-yellow {
+.services {
   margin-top: 50px;
   min-height: 540px;
   position: relative;
@@ -258,16 +270,22 @@ article.border-yellow {
     position: absolute;
     right: 50px;
   }
+  &:hover {
+    background-color: $hover-color;
+    transform: scale(1.07);
+    transition: all .3s;
+  }
 }
 
 .slider-container { margin: 0 auto; }
 
 .slider-wrapper {
-  position: relative;
-  z-index: 90;
   height: 400px;
-  width: 100%;
   overflow: hidden;
+  padding-left: 0;
+  position: relative;
+  width: 100%;
+  z-index: 90;
 }
 
 .slider-wrapper li {
