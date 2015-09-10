@@ -47,8 +47,8 @@ $(function() {
       }
 
       controls.removeClass('active').eq(nextSlider).addClass('active');
-      panels.eq(currentSlider).fadeOut('slow');
-      panels.eq(nextSlider).fadeIn('slow');
+      panels.eq(currentSlider).fadeOut(0);
+      panels.eq(nextSlider).fadeIn(0);
 
       currentSlider = nextSlider;
       nextSlider += 1;

@@ -23,4 +23,18 @@ $(document).ready(function () {
       }
     });
   });
+
+  // responsive menu from carta
+  $(".aside-menu.fa-caret-right").click(function () {
+    $(".category").addClass("active");
+    $(".fa-caret-left").addClass("active");
+  });
+  $(".aside-menu.fa-caret-left").click(function () {
+    $(".category").removeClass("active");
+    $(".fa-caret-left").removeClass("active");
+  });
+  $(".category li").click(function () {
+    $(".category").removeClass("active");
+    $(".fa-caret-left").removeClass("active");
+  });
 });

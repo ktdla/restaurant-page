@@ -89,9 +89,9 @@ h3 {
 .speciality {
   margin-top: 50px;
   article { position: relative; }
+  img { object-fit: cover; }
   .overlay {
     height: 250px;
-    object-fit: cover;
     position: absolute;
     width: 100%;
   }
@@ -315,3 +315,4 @@ li.slide-current { display: block; }
 }
 
 #side_body { display: none; }
+.aside-menu.fa-caret-left, .aside-menu.fa-caret-right { display: none; }

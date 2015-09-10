@@ -1,4 +1,4 @@
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   header {
     nav {
       float: none;
@@ -12,9 +12,34 @@
     }
     div { margin-top: 15px; }
   }
+
+  h2 { font-size: 2em; }
+  .menu article div.menu-description, .menu article .price {
+    position: static;
+  }
+  .menu article .price { font-size: 1.5em; }
+  .menu {
+    text-align: center;
+  }
+  .menu article span {
+    float: none;
+    width: 100%;
+  }
+  .menu article img {
+    margin-bottom: 50px;
+  }
+
+  //home
+  .speciality img, .speciality a:hover .overlay { height: 200px; }
+
+  .location iframe {
+    @include shift(0);
+    @include span-columns(12);
+    height: 300px;
+  }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 770px) {
   header {
     div { display: none; }
     .navigation-menu-button {
@@ -46,4 +71,86 @@
       }
     }
   }
+  //carta
+  .container h2 {
+    font-size: 1.5em;
+    line-height: 40px;
+  }
+  .category {
+    padding-left: 0;
+    position: absolute;
+    width: 200px;
+    left: -200px;
+    top: 63px;
+    background-color: white;
+    transition: all .3s ease;
+    z-index: 3;
+    &.active { left: 10px; }
+    li { border-radius: 0 5px 5px 0; }
+  }
+  .menu { width: 100%; }
+  .container {
+    position: relative;
+    padding: 0;
+    margin: 0 50px;
+  }
+  .aside-menu {
+    background-color: $light-yellow;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    font-size: 20px;
+    line-height: 52px !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0 10px;
+    &:hover { cursor: pointer; }
+  }
+  .aside-menu.fa-caret-left {
+    display: block;
+    transition: all .3s ease;
+    z-index: 1;
+    &.active {
+      left: 210px;
+    }
+  }
+  .aside-menu.fa-caret-right {
+    display: block;
+    z-index: 2;
+  }
+  .menu article div.menu-description, .menu article .price {
+    position: static;
+  }
+  .menu {
+    text-align: center;
+  }
+  .menu article span {
+    float: none;
+    width: 100%;
+  }
+  .menu article img {
+    margin-bottom: 50px;
+  }
+  //home
+  .speciality .three-columns {
+    @include span-columns(12);
+    display: inline-block;
+    margin-bottom: 25px;
+    &:last-child {  margin-bottom: 0; }
+    img { margin: 0 auto; }
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  font-size: 16px;
+  header { padding: 0 25px; }
+  .container {
+    margin: 0 25px;
+  }
+  .speciality img, .speciality a:hover .overlay { height: 150px; }
+  .speciality, .location, footer { margin-top: 25px; }
+  .horizontal-section { padding: 25px; }
+  .horizontal-section h2 { margin-bottom:25px; }
+  .main { padding: 25px 0; }
 }
