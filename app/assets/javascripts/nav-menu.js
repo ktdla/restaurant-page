@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // menu from carta
   $('.category li').click(function () {
     var name = this.dataset.name;
     for (var i = 0; i < $("section .menu").length; i++) {
@@ -9,5 +10,17 @@ $(document).ready(function () {
     $(this).addClass("active");
     $(this).find("div").addClass("arrow");
     $('#' + name).addClass("show");
+  });
+
+  // mobile menu
+  var menu = $('#navigation-menu');
+  var menuToggle = $('#mobile-menu');
+
+  $(menuToggle).unbind('click').click(function (e) {
+    menu.slideToggle(function () {
+      if (menu.is(':hidden')) {
+        menu.removeAttr('style');
+      }
+    });
   });
 });
