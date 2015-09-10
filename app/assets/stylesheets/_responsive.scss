@@ -140,17 +140,33 @@
     img { margin: 0 auto; }
     text-align: center;
   }
+  //footer
+  footer {
+    .container div {
+      margin: 0 auto;
+      float: left;
+      li {
+        margin-right: 25px;
+        display: inline-block;
+      }
+      margin-top: 25px;
+      display: block;
+    }
+    ul, .container div {
+      float: none;
+      text-align: center;
+    }
+  }
 }
 
 @media screen and (max-width: 570px) {
-  font-size: 16px;
+  body { font-size: 16px; }
   header { padding: 0 25px; }
-  .container {
-    margin: 0 25px;
-  }
+  .container { margin: 0 25px; }
   .speciality img, .speciality a:hover .overlay { height: 150px; }
-  .speciality, .location, footer { margin-top: 25px; }
-  .horizontal-section { padding: 25px; }
+  .speciality, .location, footer, .providers { margin-top: 25px; }
+  .horizontal-section, .border-yellow { padding: 25px; }
   .horizontal-section h2 { margin-bottom:25px; }
   .main { padding: 25px 0; }
+  footer a, footer span { font-size: 16px; }
 }

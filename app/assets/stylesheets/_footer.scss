@@ -2,17 +2,12 @@ footer {
   background-color: $dark-yellow;
   margin-top: 50px;
   padding: 35px 0;
-  div { position: relative; }
-  div div {
-    position: absolute;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  div div { float: right; }
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    float: left;
   }
   li {
     margin-bottom: 10px;
