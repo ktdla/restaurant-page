@@ -85,10 +85,12 @@
     background-color: white;
     transition: all .3s ease;
     z-index: 3;
-    &.active { left: 10px; }
     li { border-radius: 0 5px 5px 0; }
   }
-  .menu { width: 100%; }
+  .menu {
+    padding-top: 50px;
+    width: 100%;
+  }
   .container {
     position: relative;
     padding: 0;
@@ -96,27 +98,34 @@
   }
   .aside-menu {
     background-color: $light-yellow;
-    position: absolute;
-    top: 60px;
-    left: 10px;
-    font-size: 20px;
-    line-height: 52px !important;
-    border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    display: block;
+    font-size: 20px;
+    left: 10px;
+    line-height: 52px !important;
     padding: 0 10px;
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    width: 200px;
+    z-index: 1;
     &:hover { cursor: pointer; }
   }
-  .aside-menu.fa-caret-left {
-    display: block;
-    transition: all .3s ease;
-    z-index: 1;
-    &.active {
-      left: 210px;
-    }
+  .aside-menu.active + .category {
+    left: 10px;
   }
-  .aside-menu.fa-caret-right {
-    display: block;
-    z-index: 2;
+  .aside-menu .fa-caret-left {
+    display: none;
+  }
+  .aside-menu .fa-caret-right {
+    display: inline;
+  }
+  .aside-menu.active .fa-caret-left {
+    display: inline;
+  }
+  .aside-menu.active .fa-caret-right {
+    display: none;
   }
   .menu article div.menu-description, .menu article .price {
     position: static;
