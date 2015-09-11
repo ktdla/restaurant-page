@@ -68,5 +68,6 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
   gem 'fog'
+  gem 'dragonfly-s3_data_store'
 end
 gem 'refinerycms-events', path: 'vendor/extensions'
