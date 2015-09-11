@@ -25,7 +25,9 @@ body {
 }
 
 .container, .horizontal-section, header {
-  @extend .container-services;
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1366px;
   overflow: hidden;
 }
 
@@ -140,7 +142,10 @@ h3 {
 .our-history {
   @include span-columns(8);
   display: inline-block;
-  img { width: 95%; }
+  img {
+    object-fit: cover;
+    width: 95%;
+  }
   margin-right: 0;
   p { text-align: left; }
   text-align: center;

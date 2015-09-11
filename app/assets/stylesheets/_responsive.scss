@@ -46,6 +46,11 @@
     float: none;
     min-height: 450px;
   }
+  // our
+  .our-history, .galery {
+    @include span-columns(12);
+  }
+  .galery img { height: 300px; }
 }
 
 @media screen and (max-width: 770px) {
@@ -184,10 +189,21 @@
   .container { margin: 0 25px; }
   .speciality img, .speciality a:hover .overlay { height: 150px; }
   .speciality, .location, footer, .providers, .services { margin-top: 25px; }
-  .horizontal-section, .border-yellow, section.container-services { padding: 25px; }
+  .horizontal-section, .border-yellow { padding: 25px; }
   .horizontal-section h2 { margin-bottom:25px; }
   .main { padding: 25px 0; }
   footer a, footer span { font-size: 16px; }
-  .container .location { margin-top: 0; }
+  .container .location, .container .our-history { margin-top: 0; }
   .services .price { bottom: 25px; }
+  .galery img { height: 150px; }
+  .our-history img { height: 200px; }
+  .container .galery, .menu { margin-top: 25px;}
+  section.container-services { padding: 0 25px; }
+  .container .location {
+    padding: 25px;
+    margin-top: 25px;
+  }
+  .container .our-history { margin-top: 25px; }
+  .aside-menu { top: 35px; }
+  .category { top: 38px; }
 }
