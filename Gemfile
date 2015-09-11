@@ -67,5 +67,6 @@ gem 'refinerycms-authentication-devise', '~> 1.0'
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'fog'
 end
 gem 'refinerycms-events', path: 'vendor/extensions'
