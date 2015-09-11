@@ -1,3 +1,6 @@
+@media screen and (max-width: 1130px) {
+  article.services { min-height: 650px; }
+}
 @media screen and (max-width: 1000px) {
   header {
     nav {
@@ -36,6 +39,12 @@
     @include shift(0);
     @include span-columns(12);
     height: 300px;
+  }
+  // services
+  article.services {
+    @include span-columns(12);
+    float: none;
+    min-height: 450px;
   }
 }
 
@@ -156,6 +165,7 @@
       float: left;
       li {
         margin-right: 25px;
+        margin-bottom: 0;
         display: inline-block;
       }
       margin-top: 25px;
@@ -173,9 +183,11 @@
   header { padding: 0 25px; }
   .container { margin: 0 25px; }
   .speciality img, .speciality a:hover .overlay { height: 150px; }
-  .speciality, .location, footer, .providers { margin-top: 25px; }
-  .horizontal-section, .border-yellow { padding: 25px; }
+  .speciality, .location, footer, .providers, .services { margin-top: 25px; }
+  .horizontal-section, .border-yellow, section.container-services { padding: 25px; }
   .horizontal-section h2 { margin-bottom:25px; }
   .main { padding: 25px 0; }
   footer a, footer span { font-size: 16px; }
+  .container .location { margin-top: 0; }
+  .services .price { bottom: 25px; }
 }
