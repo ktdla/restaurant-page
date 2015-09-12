@@ -66,8 +66,8 @@ $(function() {
       }
 
       controls.removeClass('active').eq(id).addClass('active');
-      panels.eq(currentSlider).fadeOut('slow');
-      panels.eq(id).fadeIn('slow');
+      panels.eq(currentSlider).fadeOut(0);
+      panels.eq(id).fadeIn(0);
 
       currentSlider = id;
       nextSlider = id+1;
