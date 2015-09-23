@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // menu from carta
   $('.category li').click(function () {
     var name = this.dataset.name;
@@ -11,6 +12,13 @@ $(document).ready(function () {
     $(this).find("div").addClass("arrow");
     $('#' + name).addClass("show");
   });
+
+  //carta from antojitos
+  $('.speciality article').click(function () {
+    var url = $('#special').attr('href');
+    var category = url.slice(url.indexOf("#")+1);
+    alert(category);
+  })
 
   // mobile menu
   var menu = $('#navigation-menu');
