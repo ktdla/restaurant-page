@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   // menu from carta
   $('.category li').click(function () {
     var name = this.dataset.name;
