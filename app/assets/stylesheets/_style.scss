@@ -1,4 +1,5 @@
 body {
+  background-color: #FBFAF6;
   color: $brown;
   font-family: "Source Sans Pro";
   font-size: 20px;
@@ -23,6 +24,8 @@ body {
     list-style-type: none;
   }
 }
+
+header, .border-yellow, .horizontal-section{ background-color: white; }
 
 .container, .horizontal-section, header {
   margin: 0 auto;
