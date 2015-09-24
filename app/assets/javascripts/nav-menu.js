@@ -12,6 +12,19 @@ $(document).ready(function () {
     $('#' + name).addClass("show");
   });
 
+  //carta from specialities
+  var url = window.location.href
+  var category = url.slice(url.indexOf("#")+1);
+  if (url.indexOf("#") > -1) {
+    $("section .menu").removeClass("show");
+    $(".category li").removeClass("active");
+    $("li div").removeClass("arrow")
+    var element = $('li[data-name="' + category + '"]')
+    $(element).addClass("active");
+    $(element).find("div").addClass("arrow");
+    $('#' + category).addClass("show");
+  }
+
   // mobile menu
   var menu = $('#navigation-menu');
   var menuToggle = $('#mobile-menu');
