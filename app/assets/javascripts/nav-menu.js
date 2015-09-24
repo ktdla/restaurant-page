@@ -11,7 +11,7 @@ $(document).ready(function () {
     $(this).addClass("active");
     $(this).find("div").addClass("arrow");
     $('#' + name).addClass("show");
-    window.history.pushState(url, "Carta", "carta");
+    window.history.replaceState(url, "Carta", "carta");
   });
 
   //carta from specialities
