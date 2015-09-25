@@ -298,22 +298,27 @@ h3 {
 .slider-wrapper li {
   display: none;
   div {
+    float: right;
     width: 50%;
     img {
-      float: left;
-      max-width: 100%;
-      max-height: 400px;
-      padding: 0 50px;
+      width: 100%;
+      max-height: 365px;
     }
   }
-  .right {
-    float: right;
+  .food {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     font-family: 'Chewy';
-    font-size: 3.5em;
-    margin-top: 50px;
+    font-size: 4em;
     line-height: 100px;
-    span { color: $blue; }
+    text-align: center;
+    span {
+      color: $blue;
+      vertical-align: center;
+     }
     .price {
+      font-size: .8em;
       display: block;
       color: $orange;
     }
