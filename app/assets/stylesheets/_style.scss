@@ -297,9 +297,26 @@ h3 {
 
 .slider-wrapper li {
   display: none;
-  img {
-    max-width: 100%;
-    height: auto;
+  div {
+    width: 50%;
+    img {
+      float: left;
+      max-width: 100%;
+      max-height: 400px;
+      padding: 0 50px;
+    }
+  }
+  .right {
+    float: right;
+    font-family: 'Chewy';
+    font-size: 3.5em;
+    margin-top: 50px;
+    line-height: 100px;
+    span { color: $blue; }
+    .price {
+      display: block;
+      color: $orange;
+    }
   }
 }
 
