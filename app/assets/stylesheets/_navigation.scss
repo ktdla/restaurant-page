@@ -21,7 +21,7 @@ header {
       margin: .5em .5em 0;
       &:last-child { margin-right: 0; }
       &.active, &.active:hover {
-        background-color: $dark-yellow;
+        background-image: url('background1.png');
         margin: 0 1em;
         transform: scale(1.17);
         color: $orange;

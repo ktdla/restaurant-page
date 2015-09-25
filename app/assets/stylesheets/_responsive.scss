@@ -79,6 +79,7 @@
         a { padding-right: 0; }
         &:hover { background-color: $hover-color; }
         &.active {
+          background-image: none;
           margin: 0;
           transform: scale(1);
         }
