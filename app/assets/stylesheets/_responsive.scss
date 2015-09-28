@@ -90,7 +90,7 @@
     }
   }
   .slider-wrapper article {
-    div img { padding: 0; }
+    img { padding: 0; }
     .food {
       font-size: 2em;
       line-height: 50px;
@@ -203,12 +203,9 @@
   .horizontal-section, .border-yellow { padding: 25px; }
   .horizontal-section h2 { margin-bottom:25px; }
   .main { padding: 25px 0; }
-  .slider-wrapper article {
-    div img { padding: 0; }
-    .food {
+  .slider-wrapper article .food {
       font-size: 1.5em;
       line-height: 40px;
-    }
   }
   footer a, footer span { font-size: 16px; }
   .container .location, .container .our-history { margin-top: 0; }

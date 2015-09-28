@@ -293,21 +293,20 @@ h3 {
   position: relative;
   width: 100%;
   z-index: 90;
+  margin-top: 15px;
 }
 
 .slider-wrapper article {
   display: none;
-  div {
-    float: right;
+  img {
     width: 50%;
-    img {
-      width: 100%;
-      max-height: 365px;
-    }
+    float: right;
+    max-height: 365px;
   }
   .food {
     position: absolute;
     top: 50%;
+    width: 50%;
     transform: translateY(-50%);
     font-family: 'Chewy';
     font-size: 4em;
