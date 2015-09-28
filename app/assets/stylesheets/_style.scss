@@ -295,7 +295,7 @@ h3 {
   z-index: 90;
 }
 
-.slider-wrapper li {
+.slider-wrapper article {
   display: none;
   div {
     float: right;
@@ -325,7 +325,7 @@ h3 {
   }
 }
 
-li.slide-current { display: block; }
+article.slide-current { display: block; }
 
 .slider-controls {
   text-align: center;

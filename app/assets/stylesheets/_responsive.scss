@@ -34,9 +34,10 @@
 
   //home
   .speciality img, .speciality a:hover .overlay { height: 200px; }
-  .slider-wrapper li .food {
+  .slider-wrapper article .food {
     font-size: 2.5em;
-    line-height: 50px; }
+    line-height: 50px;
+  }
   .location iframe {
     @include shift(0);
     @include span-columns(12);
@@ -88,7 +89,7 @@
       }
     }
   }
-  .slider-wrapper li {
+  .slider-wrapper article {
     div img { padding: 0; }
     .food {
       font-size: 2em;
@@ -202,7 +203,7 @@
   .horizontal-section, .border-yellow { padding: 25px; }
   .horizontal-section h2 { margin-bottom:25px; }
   .main { padding: 25px 0; }
-  .slider-wrapper li {
+  .slider-wrapper article {
     div img { padding: 0; }
     .food {
       font-size: 1.5em;

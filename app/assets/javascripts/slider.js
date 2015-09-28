@@ -3,7 +3,7 @@ $(function() {
     var pb = {};
     pb.el = $('#slider');
     pb.items = {
-      panel: pb.el.find('li')
+      panel: pb.el.find('article')
     }
 
     var SliderInterval,
