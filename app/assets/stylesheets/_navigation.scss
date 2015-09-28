@@ -21,10 +21,10 @@ header {
       margin: .5em .5em 0;
       &:last-child { margin-right: 0; }
       &.active, &.active:hover {
-        background-image: url('background1.png');
+        background-image: url('background.png');
+        color: $orange;
         margin: 0 1em;
         transform: scale(1.17);
-        color: $orange;
       }
       &:hover {
         background-color: $hover-color;

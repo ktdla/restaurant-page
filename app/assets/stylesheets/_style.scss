@@ -7,8 +7,8 @@ body {
   margin: 0;
   a {
     color: $orange;
-    text-decoration: none;
     font-weight: bolder;
+    text-decoration: none;
     &:hover { color: $orange; }
   }
   button {
@@ -29,15 +29,15 @@ header, .border-yellow, .horizontal-section{ background-color: white; }
 
 .container, .horizontal-section, header {
   margin: 0 auto;
-  padding: 0 50px;
   max-width: 1366px;
   overflow: hidden;
+  padding: 0 50px;
 }
 
 .container-services {
   margin: 0 auto;
-  padding: 0 50px;
   max-width: 1366px;
+  padding: 0 50px;
 }
 
 .border-yellow {
@@ -73,7 +73,7 @@ h3 {
 }
 
 .main {
-  background-image: url('background1.png');
+  background-image: url('background.png');
   div { text-align: center; }
   padding: 50px 0;
   margin-top: 0;
@@ -171,13 +171,13 @@ h3 {
 }
 
 .category {
-  width: 25%;
-  margin-top: 50px;
-  margin-right: 0;
-  padding-left: 10px;
   float: left;
+  margin-right: 0;
+  margin-top: 50px;
   overflow: hidden;
+  padding-left: 10px;
   text-align: center;
+  width: 25%;
   li {
     @extend a;
     background-color: $light-yellow;
@@ -201,7 +201,6 @@ h3 {
 }
 
 .menu {
-  width: 75%;
   border-radius: 0 5px 5px 5px;
   display: none;
   height: 700px;
@@ -209,6 +208,7 @@ h3 {
   margin-top: 50px;
   overflow-y: auto;
   padding: 0;
+  width: 75%;
   article {
     &:first-child { border-top: none; }
     border-top: 10px dotted $dark-yellow;
@@ -220,19 +220,19 @@ h3 {
       width: 60%;
     }
     div.menu-description {
-      position: absolute;
       left: 250px;
+      position: absolute;
       top: 50%;
       transform: translateY(-50%);
     }
     .price {
+      bottom: 50px;
       color: $orange;
       font-family: 'Chewy';
       font-size: 2em;
-      text-align: right;
       position: absolute;
       right: 50px;
-      bottom: 50px
+      text-align: right;
     }
     img {
       border-radius: 5px;
@@ -288,38 +288,38 @@ h3 {
 .slider-container { margin: 0 auto; }
 
 .slider-wrapper {
+  margin-top: 15px;
   overflow: hidden;
   padding-left: 0;
   position: relative;
   width: 100%;
   z-index: 90;
-  margin-top: 15px;
 }
 
 .slider-wrapper article {
   display: none;
   img {
-    width: 50%;
     float: right;
     max-height: 365px;
+    width: 50%;
   }
   .food {
-    position: absolute;
-    top: 50%;
-    width: 50%;
-    transform: translateY(-50%);
     font-family: 'Chewy';
     font-size: 4em;
     line-height: 100px;
+    position: absolute;
     text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
     span {
       color: $blue;
       vertical-align: center;
      }
     .price {
-      font-size: .8em;
-      display: block;
       color: $orange;
+      display: block;
+      font-size: .8em;
     }
   }
 }
@@ -327,8 +327,8 @@ h3 {
 article.slide-current { display: block; }
 
 .slider-controls {
-  text-align: center;
   margin-top: 15px;
+  text-align: center;
   li {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
