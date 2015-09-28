@@ -1,10 +1,28 @@
 <section class="main slider-container">
   <div class="container">
-    <ul id="slider" class="slider-wrapper">
-      <li class="slide-current"><%= image_tag 'slider/pollo_saltado.png' %></li>
-      <li><%= image_tag 'slider/hamburguesa_americana.png' %></li>
-      <li><%= image_tag 'slider/pizza_margarita.png' %></li>
-    </ul>
+    <div id="slider" class="slider-wrapper">
+      <article class="slide-current">
+        <%= image_tag 'slider/lomo.png' %>
+        <div class="food">
+          <span>Pollo Saltado</span>
+          <span class="price">S/. 9.00</span>
+        </div>
+      </article>
+      <article>
+        <%= image_tag 'slider/hamburguesa.png' %>
+        <div class="food">
+          <span>Hamburguesa Americana</span>
+          <span class="price">S/. 8.00</span>
+        </div>
+      </article>
+      <article>
+        <%= image_tag 'slider/pizza-margarita.png' %>
+        <div class="food">
+          <span>Pizza Margarita</span>
+          <span class="price">S/. 10.00</span>
+        </div>
+      </article>
+    </div>
     <ul id="slider-controls" class="slider-controls"></ul>
   </div>
 </section>
