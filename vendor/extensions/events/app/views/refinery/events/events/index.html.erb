@@ -14,15 +14,20 @@
   <div class="category">
     <ul>
       <li class="active" data-name="recomendados">Recomendados</li>
-      <li data-name="jugos">Jugos<div></div></li>
-      <li data-name="bebidas">Bebidas<div></div></li>
-      <li data-name="sanguches">Sanguches<div></div></li>
-      <li data-name="triples">Triples<div></div></li>
+      <li data-name="combos">Combos de desayuno<div></div></li>
+      <li data-name="frutas">Frutas<div></div></li>
+      <li data-name="bebidas-calientes">Bebidas calientes<div></div></li>
+      <li data-name="bebidas-frias">Bebidas frías<div></div></li>
+      <li data-name="bebidas-granizadas">Bebidas granizadas<div></div></li>
+      <li data-name="sanguches-frios">Sánguches fríos<div></div></li>
+      <li data-name="sanguches-calientes">Sánguches calientes<div></div></li>
       <li data-name="salchipapas">Salchipapas<div></div></li>
       <li data-name="antojitos">Antojitos<div></div></li>
       <li data-name="enrrollados">Enrrollados<div></div></li>
       <li data-name="pizzas">Pizzas<div></div></li>
-      <li data-name="postres">Postres y helados<div></div></li>
+      <li data-name="postres">Postres<div></div></li>
+      <li data-name="ensaladas">Ensaladas<div></div></li>
+      <li data-name="pastas">Pastas<div></div></li>
     </ul>
   </div>
   <section id="recomendados" class="border-yellow menu show">
@@ -39,7 +44,7 @@
     <% end %>
   <% end %>
   </section>
-  <section id="jugos" class="border-yellow menu">
+  <section id="combos" class="border-yellow menu">
   <% @events.each do |event| %>
     <% if event.category == 1 %>
       <article>
@@ -53,7 +58,7 @@
     <% end %>
   <% end %>
   </section>
-  <section id="bebidas" class="border-yellow menu">
+  <section id="frutas" class="border-yellow menu">
   <% @events.each do |event| %>
     <% if event.category == 2 %>
       <article>
@@ -67,7 +72,7 @@
     <% end %>
   <% end %>
   </section>
-  <section id="sanguches" class="border-yellow menu">
+  <section id="bebidas-calientes" class="border-yellow menu">
   <% @events.each do |event| %>
     <% if event.category == 3 %>
       <article>
@@ -81,7 +86,7 @@
     <% end %>
   <% end %>
   </section>
-  <section id="triples" class="border-yellow menu">
+  <section id="bebidas-frias" class="border-yellow menu">
   <% @events.each do |event| %>
     <% if event.category == 4 %>
       <article>
@@ -95,7 +100,7 @@
     <% end %>
   <% end %>
   </section>
-  <section id="salchipapas" class="border-yellow menu">
+  <section id="bebidas-granizadas" class="border-yellow menu">
   <% @events.each do |event| %>
     <% if event.category == 5 %>
       <article>
@@ -109,7 +114,7 @@
     <% end %>
   <% end %>
   </section>
-  <section id="antojitos" class="border-yellow menu">
+  <section id="sanguches-frios" class="border-yellow menu">
   <% @events.each do |event| %>
     <% if event.category == 6 %>
       <article>
@@ -123,7 +128,7 @@
     <% end %>
   <% end %>
   </section>
-   <section id="enrrollados" class="border-yellow menu">
+  <section id="sanguches-calientes" class="border-yellow menu">
   <% @events.each do |event| %>
     <% if event.category == 7 %>
       <article>
@@ -137,7 +142,7 @@
     <% end %>
   <% end %>
   </section>
-  <section id="pizzas" class="border-yellow menu">
+  <section id="salchipapas" class="border-yellow menu">
   <% @events.each do |event| %>
     <% if event.category == 8 %>
       <article>
@@ -151,9 +156,79 @@
     <% end %>
   <% end %>
   </section>
-  <section id="postres" class="border-yellow menu">
+  <section id="antojitos" class="border-yellow menu">
   <% @events.each do |event| %>
     <% if event.category == 9 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price">S/. <%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="enrrollados" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 10 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price">S/. <%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="pizzas" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 11 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price">S/. <%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="postres" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 12 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price">S/. <%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="ensaladas" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 13 %>
+      <article>
+        <%= image_fu event.photo, nil %>
+        <div class="menu-description">
+          <h3><%=raw event.title %></h3>
+          <span><%=raw event.description %></span>
+        </div>
+        <span class="price">S/. <%=raw event.price %></span>
+      </article>
+    <% end %>
+  <% end %>
+  </section>
+  <section id="pastas" class="border-yellow menu">
+  <% @events.each do |event| %>
+    <% if event.category == 14 %>
       <article>
         <%= image_fu event.photo, nil %>
         <div class="menu-description">
