@@ -1,3 +1,15 @@
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+<%= raw %(<meta name="description" content="#{@meta.meta_description}" />) if @meta.meta_description.present? -%>
+<%= raw %(<link rel="canonical" href="#{request.protocol}#{request.host_with_port}#{@canonical}" />) if @canonical.present? -%>
+<%= csrf_meta_tags if Refinery::Core.authenticity_token_on_frontend -%>
+<%= yield :meta %>
+
+<%= yield :stylesheets %>
+
+<%= render '/refinery/google_analytics' %>
+
+<%= javascript_include_tag 'modernizr-min' %>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8" />
 <title>Café Restaurante Doña Elsita</title>
