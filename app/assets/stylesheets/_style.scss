@@ -148,7 +148,14 @@ h3 {
     float: left;
     width: 50%;
   }
-  ul { padding: 50px; }
+  ul {
+    padding: 50px auto;
+    li {
+      font-size: 1.3em;
+      line-height: 50px;
+    }
+    li img { width: 20%; }
+  }
 }
 
 .our-history {
