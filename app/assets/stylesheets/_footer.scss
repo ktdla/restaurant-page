@@ -12,6 +12,10 @@ footer {
   }
   li {
     margin-bottom: 10px;
+    #link {
+      font-weight: normal;
+      font-size: .7em;
+    }
     &:last-child { margin-bottom: 0; }
   }
   span {
