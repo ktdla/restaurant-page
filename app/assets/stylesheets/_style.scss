@@ -146,16 +146,17 @@ h3 {
   margin-top: 50px;
   div, iframe { float: left; }
   div {
-    width: 30%;
-    font-size: 1.3em;
+    width: 40%;
+    font-size: 1.2em;
+    padding-right: 50px;
     img {
       margin-top: 15px;
-      width: 50px;
+      width: 100px;
     }
     span {
       display: block;
-      font-size: .8em;
-      margin-top: 79%;
+      font-size: .7em;
+      margin-top: 40%;
     }
   }
   ul {
@@ -165,7 +166,10 @@ h3 {
       width: 26px;
     }
   }
-  iframe { width: 70%; }
+  iframe {
+    width: 60%;
+    height: 400px;
+  }
 }
 
 .our-history {

@@ -54,6 +54,16 @@
     @include span-columns(12);
   }
   .galery img { height: 300px; }
+  //contact
+  .contact {
+    div {
+      width: 50%;
+      padding-right: 0;
+      font-size: 1em;
+      img { width: 70px; }
+    }
+    iframe { width: 50%; }
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -120,6 +130,16 @@
     position: relative;
     padding: 0;
     margin: 0 50px;
+  }
+  .contact {
+    padding: 25px;
+    div, iframe { width: 100%; }
+    div {
+      text-align: center;
+      margin-bottom: 25px;
+      span { margin-top: 0; }
+    }
+    iframe { height: 300px; }
   }
   .aside-menu {
     background-color: $light-yellow;
