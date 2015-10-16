@@ -12,6 +12,7 @@ footer {
   }
   li {
     margin-bottom: 10px;
+
     &:last-child { margin-bottom: 0; }
   }
   span {
@@ -30,5 +31,15 @@ footer {
     color: $blue;
     font-size: 20px;
     margin-right: 5px;
+  }
+  .credits {
+    margin-top: 25px;
+    width: 100%;
+    text-align: left;
+    a {
+      border-top: 1px solid $brown;
+      font-weight: normal;
+      font-size: .7em;
+    }
   }
 }
