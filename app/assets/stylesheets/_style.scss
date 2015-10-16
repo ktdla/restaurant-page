@@ -142,6 +142,15 @@ h3 {
   }
 }
 
+.contact {
+  margin-top: 50px;
+  ul, iframe {
+    float: left;
+    width: 50%;
+  }
+  ul { padding: 50px; }
+}
+
 .our-history {
   @include span-columns(8);
   display: inline-block;
