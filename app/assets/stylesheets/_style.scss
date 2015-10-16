@@ -144,18 +144,28 @@ h3 {
 
 .contact {
   margin-top: 50px;
-  ul, iframe {
-    float: left;
-    width: 50%;
+  div, iframe { float: left; }
+  div {
+    width: 30%;
+    font-size: 1.3em;
+    img {
+      margin-top: 15px;
+      width: 50px;
+    }
+    span {
+      display: block;
+      font-size: .8em;
+      margin-top: 79%;
+    }
   }
   ul {
-    padding: 50px auto;
-    li {
-      font-size: 1.3em;
-      line-height: 50px;
+    padding-left: 0;
+    li i {
+      margin-right: 15px;
+      width: 26px;
     }
-    li img { width: 20%; }
   }
+  iframe { width: 70%; }
 }
 
 .our-history {
